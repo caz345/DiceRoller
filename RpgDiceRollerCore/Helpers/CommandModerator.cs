@@ -19,6 +19,7 @@ namespace RpgDiceRollerCore.Helpers
             commands.Add(new DcCommand());
             commands.Add(new AverageCommand());
             commands.Add(new ToHitCommand());
+            commands.Add(new CthuluCommand());
         }
 
         public void Init(string input)

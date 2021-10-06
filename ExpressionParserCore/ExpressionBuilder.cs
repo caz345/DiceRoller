@@ -168,6 +168,11 @@ namespace ExpressionParserCore
             var exp1 = input.Substring(0, index);
 
             var exp2 = input.Substring(index + 1, input.Length - (index + 1));
+            
+            if(exp1 == String.Empty)
+            {
+                exp1 = "0";
+            }
 
             return new SubExpression(Parse(exp1), Parse(exp2));
         }

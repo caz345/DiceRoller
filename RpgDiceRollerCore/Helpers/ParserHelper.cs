@@ -14,7 +14,7 @@ namespace RpgDiceRollerCore.Helpers
             int times = 1;
             if (parsed.Count() > 1)
             {
-                times = short.Parse(parsed[0]);
+                times = int.Parse(parsed[0]);
                 input = parsed[1];
             }
             return times;
